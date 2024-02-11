@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Nogi</title>
+    <link rel="stylesheet" href="/styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body scroll="no" style="overflow: hidden">
+    <script>
+        const body = document.querySelector("body");
+
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.className = "fas fa-heart";
+    heart.style.left = (Math.random() * 100)+"vw";
+    heart.style.animationDuration = (Math.random()*10)+2+"s"
+    body.appendChild(heart);
+}
+setInterval(createHeart,100);
+setInterval(function name(params) {
+    var heartArr = document.querySelectorAll(".fa-heart")
+    if (heartArr.length > 200) {
+       heartArr[0].remove()
+    }
+    //console.log(heartArr);
+},100)
+
+    </script>
+     <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+    <div class="content">
+        <h1>Are you Nogi?</h1>
+        <div class="button-container">
+            <a href="/yes" class="yes-button">Yes</a>
+            <a href="/no" class="no-button">No</a>
+        </div>
+    </div>
+</body>
+</html>

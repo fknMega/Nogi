@@ -1,0 +1,50 @@
+body {
+    background-color: #ffe0e9; /* Light pink background */
+    font-family: 'Lobster', cursive; /* Romantic font */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 90%;
+    margin-bottom: 20px; /* Space between message and arrows */
+}
+
+.message {
+    font-size: 24px;
+    color: #d63384; /* Valentine pink */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: #d63384;
+    cursor: pointer;
+    margin: 0 15px; /* Space between arrows */
+}
+
+@media (max-width: 768px) {
+    .message {
+        font-size: 20px; /* Adjust size for smaller devices */
+    }
+    .arrow-btn {
+        font-size: 24px; /* Slightly smaller arrows for smaller devices */
+    }
+}
